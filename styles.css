@@ -1,0 +1,74 @@
+:root {
+  --primary_Pale_blue: hsl(225, 100%, 94%);
+  --primary_Bright_blue: hsl(245, 75%, 52%);
+
+  --Neutral_Very_pale_blue: hsl(225, 100%, 98%);
+  --Neutral_Desaturated_blue: hsl(224, 23%, 55%);
+  --Neutral_Dark_blue: hsl(223, 47%, 23%);
+}
+/* reset */
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/* Fonts */
+@font-face {
+  font-family: "Red Hat Display";
+  src: local("Red Hat Display"), local("Red Hat Display"),
+    url("./assets/fonts/RedHatDisplay-Regular.ttf") format("truetype"); /*Super Modern Browsers*/
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RedHatDisplay-Black";
+  src: local("RedHatDisplay-Black"), local("RedHatDisplay-Black"),
+    url("./assets/fonts/RedHatDisplay-Black.ttf") format("truetype"); /*Super Modern Browsers*/
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RedHatDisplay-Medium";
+  src: local("RedHatDisplay-Medium"), local("RedHatDisplay-Medium"),
+    url("./assets/fonts/RedHatDisplay-Medium.ttf") format("truetype"); /*Super Modern Browsers*/
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: var(--primary_Pale_blue);
+  font-family: "Red Hat Display";
+}
+.container {
+  min-width: 100px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 20px;
+}
+.hero-section {
+  width: 100%;
+}
+.hero-section img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.summary {
+  margin: 15px;
+  text-align: center;
+}
+.summary h1 {
+  font-family: "RedHatDisplay-Black";
+  color: var(--Neutral_Dark_blue);
+  margin: 0;
+}
+.summary p {
+  color: var(--Neutral_Desaturated_blue);
+  font-family: "RedHatDisplay-Medium";
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 15px 10px;
+}
