@@ -15,6 +15,10 @@ li {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style-type: none;
+}
+p{
+  font-size: 16px;
 }
 /* Fonts */
 @font-face {
@@ -41,13 +45,20 @@ li {
 body {
   background: var(--primary_Pale_blue);
   font-family: "Red Hat Display";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container {
-  min-width: 100px;
-  height: 600px;
+  /* width: 500px;
   background-color: #fff;
   border-radius: 15px;
-  margin: 20px;
+  margin: 20px; */
+  background-color: #fff;
+  width: 28em;
+  border-radius: 1.25rem;
+  margin: 0.75rem;
+  overflow: hidden;
 }
 .hero-section {
   width: 100%;
@@ -56,6 +67,10 @@ body {
   width: 100%;
   border-radius: 15px 15px 0 0;
 }
+ .order{
+  width: 80%;
+  margin: 0 auto;
+} 
 .summary {
   margin: 15px;
   text-align: center;
@@ -68,7 +83,67 @@ body {
 .summary p {
   color: var(--Neutral_Desaturated_blue);
   font-family: "RedHatDisplay-Medium";
-  font-size: 16px;
   line-height: 1.5em;
   padding: 15px 10px;
+}
+.order-section {
+  display: flex;
+  background-color: var(--Neutral_Very_pale_blue);
+  margin:0 auto;
+  padding: 25px;
+  border-radius: 15px;
+  align-items: center;
+}
+.annual-plan{
+  margin-left: 15px;
+}
+.annual-link{
+  margin-left: 110px;
+}
+.order-section h4 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-family:"RedHatDisplay-Black";
+}
+.order-section a{
+  text-decoration: underline;
+  color: var(--primary_Bright_blue);
+  font-family:"RedHatDisplay-Black";
+}
+.order-section a:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(56, 41, 224, .7);
+}
+.order-section p{
+    color: var(--Neutral_Desaturated_blue);
+    font-family: "RedHatDisplay-Medium";
+}
+button {
+  width: 100%;
+  margin: 20px auto;
+  display: block;
+  padding: 20px 40px;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: var(--primary_Bright_blue);
+}
+button:hover{
+  cursor: pointer;
+  background-color: rgba(56, 41, 224, .7);
+}
+.cancel{
+      color: var(--Neutral_Desaturated_blue);
+      font-family: "RedHatDisplay-Medium";
+      font-weight: 700;
+      width: 100%;
+      margin: 30px auto;
+      display: block;
+      text-align: center;
+}
+.cancel:hover{
+  color: var(--Neutral_Dark_blue);
 }
