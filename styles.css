@@ -90,15 +90,27 @@ body {
   display: flex;
   background-color: var(--Neutral_Very_pale_blue);
   margin:0 auto;
-  padding: 25px;
+  padding: 20px;
   border-radius: 15px;
   align-items: center;
+  flex-wrap: wrap;
+}
+.music-image{
+  flex-grow: 1;
+  min-width: 50px;
+  text-align: center;
 }
 .annual-plan{
+  min-width: 50px;
   margin-left: 15px;
+  flex-grow:1;
+  text-align: center;
 }
 .annual-link{
-  margin-left: 110px;
+  min-width: 100px;
+  margin-left: 1.2em;
+  flex-grow:1;
+  text-align: center;
 }
 .order-section h4 {
   margin-top: 0px;
@@ -146,4 +158,11 @@ button:hover{
 }
 .cancel:hover{
   color: var(--Neutral_Dark_blue);
+}
+
+@media screen and (max-width:420px) {
+  .annual-link {
+    margin: 10px 0;
+ 
+  }
 }
